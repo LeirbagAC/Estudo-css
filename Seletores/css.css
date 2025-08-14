@@ -1,0 +1,11 @@
+ul > li {
+    color: red;
+}
+
+h1 + p {
+    color: green;
+}
+
+.outro h1 ~ p {
+    color: orange;
+}

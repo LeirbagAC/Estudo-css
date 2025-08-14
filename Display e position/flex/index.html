@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Flex</title>
+    <link rel="stylesheet" type="text/css" href="css.css" />   
+</head>
+<body>
+    <h1>Playground Flexbox</h1>
+    <p>Altere as classes nos containers para testar diferentes propriedades.</p>
+
+    <h2>1 - Flex Direction</h2>
+    <div class="container direction-row">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div>
+
+    <div class="container direction-column">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div>
+
+    <h2>2 - Justify Content</h2>
+    <div class="container justify-start">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+    </div>
+
+    <div class="container justify-center">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+    </div>
+
+     <div class="container justify-around"> <!--Mudar o n9ome da classe no css para testar os outros -->
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+    </div>
+
+    <h2>3 - Align Items</h2>
+    <div class="container align-start" style="height: 150px;">
+        <div class="item">1</div>
+        <div class="item" style="height:50px;">2</div>
+        <div class="item" style="height:80px;">3</div>
+    </div>
+
+    <div class="container align-center" style="height: 150px;">
+        <div class="item">1</div>
+        <div class="item" style="height:50px;">2</div>
+        <div class="item" style="height:80px;">3</div>
+    </div>
+
+    <h2>4 - Align Self</h2>
+    <div class="container align-self-container" style="height: 150px;">
+        <div class="item">1</div>
+        <div class="item self-center">2</div>
+        <div class="item self-end">3</div>
+    </div>
+
+    <h2>5 - Flex Wrap</h2>
+    <div class="container wrap" style="width: 200px;">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </div>
+
+    <h2>6 - Order</h2>
+    <div class="container">
+        <div class="item order-3">1</div>
+        <div class="item order-1">2</div>
+        <div class="item order-2">3</div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,62 @@
+  body {
+    font-family: Arial, sans-serif;
+    background: #f2f2f2;
+    padding: 20px;
+  }
+
+  h2 {
+    margin-top: 40px;
+  }
+
+  .container {
+    display: flex;
+    background: white;
+    border: 2px solid #ccc;
+    padding: 10px;
+    margin-bottom: 30px;
+    min-height: 120px;
+    gap: 10px;
+  }
+
+  .item {
+    background: #4cafef;
+    color: white;
+    padding: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    text-align: center;
+    flex: 0 0 60px; /* Largura fixa para facilitar visualização */
+  }
+
+  /* 1 - Flex Direction */
+  .direction-row { flex-direction: row; }
+  .direction-column { flex-direction: column; }
+
+  /* 2 - Justify Content */
+  .justify-start { justify-content: flex-start; }
+  .justify-center { justify-content: center; }
+  .justify-end { justify-content: flex-end; }
+  .justify-between { justify-content: space-between; }
+  .justify-around { justify-content: space-around; }
+  .justify-evenly { justify-content: space-evenly; }
+
+  /* 3 - Align Items */
+  .align-start { align-items: flex-start; }
+  .align-center { align-items: center; }
+  .align-end { align-items: flex-end; }
+  .align-stretch { align-items: stretch; }
+  .align-baseline { align-items: baseline; }
+
+  /* 4 - Align Self */
+  .align-self-container { align-items: flex-start; }
+  .self-center { align-self: center; }
+  .self-end { align-self: flex-end; }
+
+  /* 5 - Flex Wrap */
+  .wrap { flex-wrap: wrap; }
+  .nowrap { flex-wrap: nowrap; }
+
+  /* 6 - Order */
+  .order-1 { order: 1; }
+  .order-2 { order: 2; }
+  .order-3 { order: 3; }
