@@ -1,0 +1,51 @@
+body {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 20px;
+  font-family: sans-serif;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(2, 100px);
+  border: 2px solid #444;
+  background: #f5f5f5;
+}
+
+.item {
+  background: coral;
+  border: 1px solid #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* Diferentes demonstrações */
+.justify-content {
+  justify-content: space-between;
+}
+
+.align-content {
+  height: 300px;
+  align-content: space-between;
+}
+
+.justify-items {
+  justify-items: center;
+}
+
+.align-items {
+   align-items: center;
+}
+
+.justify-self .item:nth-child(2) {
+  justify-self: end;
+}
+
+.align-self .item:nth-child(4) {
+  align-self: end;
+}

@@ -1,39 +1,39 @@
 .container {
   display: grid;
-  grid-template-rows: 100px 300px 100px;
-  grid-template-columns: 3fr 1fr;
+  grid-template-rows: repeat(4, 100px);
+  grid-template-columns: repeat(4, 1fr);
 
   /* Nomeação */
-  grid-template-areas: 
+  /* grid-template-areas: 
   'header header'
   'main aside'
-  'footer footer';
+  'footer footer'; */
   
   /* Fração */
   /* grid-template-columns: 100px minmax(100px, 3fr) 1fr; */
 
-  /* Auto */
+  /* Auto
   grid-auto-rows: 100px;
-  grid-auto-columns: 100px;
+  grid-auto-columns: 100px; */
+
+  justify-items: center;
+  align-items: center;
 }
 
 .item-1 {
-  grid-area: header;
-  /* grid-area: 1/1/3/7; */
+  justify-self: stretch;
 }
 
+/* 
 .item-2 {
   grid-area: main;
-  /* grid-area: 2 / 4 / 4 / 6;
-  z-index: 1; */
+
 }
 
 .item-3 {
   grid-area: aside;
-  /* grid-area: 3 / 1 / -1 / -1; */
 }
 
 .item-3 {
   grid-area: footer;
-  /* grid-area: 3 / 1 / -1 / -1; */
-}
+} */

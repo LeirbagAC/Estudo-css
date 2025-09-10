@@ -1,0 +1,29 @@
+* {
+    background-color: gray;
+}
+    
+.container {
+    width: 200px;
+    height: 200px;
+    background-color: lightblue;
+    /* border-radius: 50%; */
+    
+    border-radius: 10px 30px 50px 70px;
+
+    /* border-radius: 9999px; arredonda até parecer uma pílula */
+
+
+    /* Para mudar cada um individualmente */
+    /* 
+    border-top-left-radius: 20px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 0; 
+    */
+
+    display: grid;
+    place-items: center;
+    margin: 0;
+    min-height: 100vh;
+
+}

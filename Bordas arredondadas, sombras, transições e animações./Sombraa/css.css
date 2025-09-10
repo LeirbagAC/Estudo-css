@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap; /* quebra linha quando faltar espaço */
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background: #f0f0f0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  width: 180px;
+  height: 120px;
+  background: white;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 14px;
+  padding: 10px;
+}
+
+/* Exemplos de sombras */
+
+/* 1. Sombra suave */
+.soft {
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+/* 2. Sombra forte */
+.strong {
+  box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+}
+
+/* 3. Sombra interna */
+.inset {
+  box-shadow: inset 0 4px 10px rgba(0,0,0,0.3);
+}
+
+/* 4. Múltiplas sombras */
+.multi {
+  box-shadow: 4px 4px 10px rgba(0,0,0,0.3),
+              -4px -4px 10px rgba(255,0,0,0.3);
+}
+
+/* 5. Neumorfismo (soft UI) */
+.neumorph {
+  background: #e0e0e0;
+  box-shadow: 8px 8px 16px rgba(0,0,0,0.2),
+              -8px -8px 16px rgba(255,255,255,0.7);
+}
+
+/* 6. Glassmorphism: Tudo em baixo dele fica com desfoque*/
+.glass {
+  background: rgba(255,255,255,0.15);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+  border: 1px solid rgba(255,255,255,0.3);
+}
+
+.text {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  background-color: #6200ea;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  transition: box-shadow 0.3s ease;
+}
+
+.button:hover {
+  box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+}
